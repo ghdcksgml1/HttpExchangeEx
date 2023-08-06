@@ -12,13 +12,13 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 @Configuration
 public class AppConfig {
 
-    @Bean
-    public ExternalApiClients externalApiClients() {
-        WebClient webClient = WebClient.builder().baseUrl("https://open.er-api.com").build();
-        HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(webClient)).build();
-
-        ExternalApiClients externalService = factory.createClient(ExternalApiClients.class);
-
-        return externalService;
-    }
+//    @Bean
+//    public ExternalApiClients externalApiClients() {
+//        WebClient webClient = WebClient.builder().baseUrl("https://open.er-api.com").build();
+//        HttpServiceProxyFactory factory = HttpServiceProxyFactory.builder(WebClientAdapter.forClient(webClient)).build();
+//
+//        ExternalApiClients externalService = factory.createClient(ExternalApiClients.class);
+//
+//        return externalService;
+//    }
 }

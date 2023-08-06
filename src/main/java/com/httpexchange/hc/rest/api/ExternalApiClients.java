@@ -5,7 +5,7 @@ import com.httpexchange.hc.rest.dto.ExternalApiResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.service.annotation.GetExchange;
 
-@Service
+@ExternalClients(baseUrl = "https://open.er-api.com")
 public interface ExternalApiClients {
 
     @GetExchange(value = "/v6/latest")
